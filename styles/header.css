@@ -7,7 +7,8 @@
 
 .header-layout {
   position: relative;
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -15,22 +16,51 @@
   font-size: 22px;
   letter-spacing: 4px;
   color: var(--txt-default-color);
-  padding-top: 21px ;
+  padding-top: 21px;
   padding-left: 43px;
 }
 
+.hamburger-menu {
+  width: 84px;
+  height: 84px;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
 .main-navigation__list{
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation__item {
+  padding: 16px;
 }
 
 .main-navigation__item a {
   font-family: var(--default-font);
   color: var(--txt-default-color);
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
+
+.main-navigation__item--login {
+  text-decoration: underline 1px #fff;
+}
+
+.main-navigation__item--signup {
+  padding: 14px 27px 15px;
+  background-color: var(--btn-color);
+  border-radius: 24px;
+}
+
 
 .header-intro {
   position: relative;
@@ -39,28 +69,65 @@
   align-items: center;
   justify-content: center;
   color: var(--txt-default-color);
+  margin-top: 183px;
 }
 
 .header-intro__subtitle {
   font-family: var(--default-font);
+  font-size: 22px;
 }
 
 .header-intro__title {
   font-family: var(--title-font);
+  font-size: 220px;
+  font-weight: 400;
 }
 
 .header-intro__description {
   text-align: center;
   font-family: var(--default-font);
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgba(206,89,55,0);
 }
 
 .header-intro__button {
   width: 134px;
   height: 48px;
+  margin-top: 20px;
   border-radius: 24px;
   border: none;
   background-color: var(--btn-color);
   font-family: var(--default-font);
   font-size: 16px;
   font-weight: bold;
+}
+
+/* Responsive */
+main-navigation__item--hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__item--hidden {
+    display: inline-block;
+  }
+}
+
+/* Esconder o botão de menu hamburguer em resoluções maiores */
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+  }
+  
+  .main-navigation__list {
+    display: none;
+  }
+
+  .main-navigation__list.active {
+    display: block;
+  }
 }
