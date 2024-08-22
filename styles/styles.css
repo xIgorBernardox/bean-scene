@@ -18,7 +18,7 @@
 
   --btn-color: #F9C06A;
   --btn-txt-color: #1E1E1E;
-  
-  --card-primary-color: #F9C06A; /*Essa cor tem 42% de opacity */
-  --card-secondary-color: #FFEED8;
+
+  --card-bg-primary-color: #F9C06A; /*Essa cor tem 42% de opacity */
+  --card-bg-secondary-color: #FFEED8;
 }
