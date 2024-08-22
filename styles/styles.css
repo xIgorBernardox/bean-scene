@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --title-font: Clicker Script, Sans-serif, Arial, Helvetica;
+  --default-font: Playfair Display, Sans-serif, Arial, Helvetica;
+
+  /* Clors */
+  --bg-default-color: #FFFEFC;
+
+  --txt-default-color: #fff;
+  --txt-primary-color: #603809;
+  --txt-secondary-color: #707070;
+
+  --btn-color: #F9C06A;
+  --btn-txt-color: #1E1E1E;
+  
+  --card-primary-color: #F9C06A; /*Essa cor tem 42% de opacity */
+  --card-secondary-color: #FFEED8;
+}
