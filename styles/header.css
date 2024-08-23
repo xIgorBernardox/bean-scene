@@ -33,37 +33,39 @@
 
 .main-navigation__list{
   width: 280px;
+  height: 768px;
   position: absolute;
   padding: 16px;
   display: none;
   list-style: none;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);/
+  top: -100%;
   right: 0;
+  transition: all 0.3s ease;
   z-index: 999;
 }
 
 .main-navigation__list.active {
   display: block;
-  transform: translateX(0);
+  top: 0;
+}
+
+
+.main-navigation__item {
+  margin: 16px 0;
+  padding: 24px 16px;
 }
 
 .main-navigation__item--home {
   margin-top: 48px;
 }
 
-.main-navigation__item {
-  padding: 16px;
-}
-
 .main-navigation__item a {
   font-family: var(--default-font);
   color: var(--txt-default-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 16px;
 }
