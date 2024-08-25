@@ -22,3 +22,7 @@
   --card-bg-primary-color: #F9C06A; /*Essa cor tem 42% de opacity */
   --card-bg-secondary-color: #FFEED8;
 }
+
+html, body{
+  overflow-x: hidden;
+}

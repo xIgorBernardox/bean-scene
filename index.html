@@ -1,62 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hot Coffee</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Coffee</title>
 
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- CSS -->
-   <link rel="stylesheet" href="styles/styles.css">
-   <link rel="stylesheet" href="styles/header.css">
-</head>
-<body>
-  <header>
-    <img class="bg-header" src="/assets/top-bg/coffee_image.png" alt="A cup of coffee with smoke in the shape of a heart">
-    <div class="header-layout">
-      <h1 class="logo">
-        <span class="logo__text">Hot</span>
-        <span class="logo__text logo_text--bold">Coffee</span>
-      </h1>
-      <nav class="main-navigation">
-        <button class="hamburger-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--home"><a href="#">Home</a></li>
-          <li class="main-navigation__item"><a href="#">Menu</a></li>
-          <li class="main-navigation__item"><a href="#">About</a></li>
-          <li class="main-navigation__item"><a href="#">Contact</a></li>
-          <li class="main-navigation__item main-navigation__item--login"><a href="#">Entrar</a></li>
-          <li class="main-navigation__item main-navigation__item--signup"><a href="#">Registrar-se</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-intro">
-      <h3 class="header-intro__subtitle">Nós cobrimos sua manhã com</h3>
-      <h1 class="header-intro__title">Café</h1>
-      <p class="header-intro__description">
-        O melhor é começar o dia com uma xícara de café. Descubra o
-        melhores sabores de café que você já teve. Nós fornecemos o melhor
-        para nossos clientes.
-      </p>
-      <button class="header-intro__button">Pedir Café</button>
-    </div>
-  </header>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <main>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/best-coffee.css">
+  </head>
+  <body>
+    <header>
+      <img
+        class="bg-header"
+        src="/assets/top-bg/coffee_image.png"
+        alt="A cup of coffee with smoke in the shape of a heart"
+      />
+      <div class="header-layout">
+        <h1 class="logo">
+          <span class="logo__text">Hot</span>
+          <span class="logo__text logo_text--bold">Coffee</span>
+        </h1>
+        <nav class="main-navigation">
+          <button class="hamburger-menu" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item main-navigation__item--home">
+              <a href="#">Home</a>
+            </li>
+            <li class="main-navigation__item"><a href="#">Menu</a></li>
+            <li class="main-navigation__item"><a href="#">About</a></li>
+            <li class="main-navigation__item"><a href="#">Contact</a></li>
+            <li class="main-navigation__item main-navigation__item--login">
+              <a href="#">Entrar</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--signup">
+              <a href="#">Registrar-se</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-intro">
+        <h3 class="header-intro__subtitle">Nós cobrimos sua manhã com</h3>
+        <h1 class="header-intro__title">Café</h1>
+        <p class="header-intro__description">
+          O melhor é começar o dia com uma xícara de café. Descubra o melhores
+          sabores de café que você já teve. Nós fornecemos o melhor para nossos
+          clientes.
+        </p>
+        <button class="header-intro__button">Pedir Café</button>
+      </div>
+    </header>
 
-  </main>
+    <main>
+      <section class="best-coffee">
+        <img class="best-coffee__fixed-image" src="assets/coffee-blast/coffee_blast.png" alt="café derramando">
+        <div class="best-coffee__text">
+          <h1 class="best-coffee__title">Descubra o melhor café</h1>
+          <p class="best-coffee__description">
+            Bean Scene é uma cafeteria que oferece café de qualidade que ajuda a
+            aumentar sua produtividade e a melhorar seu humor. Tomar uma xícara de
+            café é bom, mas tomar uma xícara de café de verdade é ainda melhor.
+            Não há dúvida de que você apreciará este café mais do que outros que
+            já provou.
+          </p>
+          <button class="best-coffee__button">Saiba mais.</button>
+        </div>
+        <div class="best-coffee__image-container">
+          <img
+            class="best-coffee__image"
+            src="assets/best-coffee-section/stylized-cup-coffee-out-coffee-beans-flat-lay 1.png"
+            alt="Xícara de café estilizada com grãos de café ao redor"
+          />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
 
-  <footer>
-
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

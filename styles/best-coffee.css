@@ -1,0 +1,80 @@
+/* Mobile */
+@media (width <= 768px) {
+  .best-coffee {
+    width: 100vw;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .best-coffee__fixed-image {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 200px;
+    z-index: 10; 
+  }
+
+  .best-coffee__text {
+    text-align: center;
+  }
+
+  .best-coffee__title {
+    margin-bottom: 22px;
+    font-family: var(--default-font);
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--txt-primary-color);
+  }
+
+  .best-coffee__description {
+    width: auto;
+    padding: 16px;
+    font-family: var(--txt-default-font);
+    font-size: 20px;
+    font-weight: 400;
+    /* text-align: left; */
+    color: var(txt-secondary-color);
+  }
+
+  .best-coffee__button {
+    width: 134px;
+    height: 48px;
+    margin-top: 20px;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--btn-color);
+    font-family: var(--default-font);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .best-coffee__image-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .best-coffee__image {
+    width: 250px;
+    height: 250px;
+    transform: translateX(-32px);
+  }
+}
+
+/* Tablets */
+@media (width <= 1024px) {
+  
+}
+
+@media (width <= 1600px) {
+
+}
+
+@media (width > 1600px) {
+
+}
